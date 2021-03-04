@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Employée</title>
+</head>
+<body onload="affichage()">
+    <div class="card" style="width: 40%; margin: auto; background-color: grey;">
+        <h1 style="text-align: center;">Employée</h1>
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control" id="fname" placeholder="First name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control" id="lname" placeholder="Last name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control" id="mailE" placeholder="E-mail">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="text" class="form-control" id="Eaddress" placeholder="address">
+            </div>
+            <div style="text-align: center;">
+                <button onclick="Employee()" class="btn btn-primary btn-lg">add</button>
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">address</th>
+            <th scope="col">E-mail</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="body">
+          <tr>
+            <th scope="row">1</th>
+            <td>aaa</td>
+            <td>bbb</td>
+            <td>aa</td>
+            <td>bb</td>
+            <td>upd</td>
+            <td>del</td>
+          </tr>
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="Employée.js"></script>
+</body>
+</html>
